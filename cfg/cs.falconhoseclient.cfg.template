@@ -20,7 +20,7 @@ read_timeout = 30
 # Specify partition number 0 to n or 'all' (without quote) for all partitions
 partition = all
 
-http_proxy =
+http_proxy = $HTTP_PROXY
 
 # Output formats
 # Supported formats are
@@ -110,28 +110,28 @@ retry_interval_secs = 10
 keys_ordered = true
 
 [EventTypeCollection]
-DetectionSummaryEvent = true
-EppDetectionSummaryEvent = true
-FcsIoaDetectionSummaryEvent = true
 AuthActivityAuditEvent = true
-UserActivityAuditEvent = true
-APIActivityAuditEvent = true
-HashSpreadingEvent = true
+DetectionSummaryEvent = true
+FirewallMatchEvent = true
+IncidentSummaryEvent = true
 RemoteResponseSessionStartEvent = true
 RemoteResponseSessionEndEvent = true
-FirewallMatchEvent = true
-CSPMSearchStreamingEvent = true
-CSPMIOAStreamingEvent = true
-IncidentSummaryEvent = true
-CustomerIOCEvent = true
-IdentityProtectionEvent = true
-ReconNotificationSummaryEvent = true
-ScheduledReportNotificationEvent = true
-MobileDetectionSummaryEvent = true
-XdrDetectionSummaryEvent = true
-IdpDetectionSummaryEvent = true
-DataProtectionDetectionSummaryEvent = true
-AutomatedLeadSummaryEvent = true
+UserActivityAuditEvent = true
+EppDetectionSummaryEvent = false
+FcsIoaDetectionSummaryEvent = false
+APIActivityAuditEvent = false
+HashSpreadingEvent = false
+CSPMSearchStreamingEvent = false
+CSPMIOAStreamingEvent = false
+CustomerIOCEvent = false
+IdentityProtectionEvent = false
+ReconNotificationSummaryEvent = false
+ScheduledReportNotificationEvent = false
+MobileDetectionSummaryEvent = false
+XdrDetectionSummaryEvent = false
+IdpDetectionSummaryEvent = false
+DataProtectionDetectionSummaryEvent = false
+AutomatedLeadSummaryEvent = false
 
 # ----------------------------------------------------------------------------------------------------------------
 # Below configurations only applies if syslog is ENABLED (under Syslog: enabled=true
